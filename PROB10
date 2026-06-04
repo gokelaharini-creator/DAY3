@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ex10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter salary: ");
+        double salary = sc.nextDouble();
+
+        System.out.print("Enter years of experience: ");
+        int exp = sc.nextInt();
+
+        double bonus;
+
+        if (exp > 5) {
+            bonus = salary * 0.20;
+        } else {
+            bonus = salary * 0.10;
+        }
+
+        double finalSalary = salary + bonus;
+
+        System.out.println("Final Salary = ₹" + finalSalary);
+    }
+}
