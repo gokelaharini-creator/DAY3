@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ex2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int age;
+        double salary;
+        char activeLoan;
+
+        System.out.print("Enter age: ");
+        age = sc.nextInt();
+
+        System.out.print("Enter monthly salary: ");
+        salary = sc.nextDouble();
+
+        System.out.print("Do you have an active loan? (Y/N): ");
+        activeLoan = sc.next().charAt(0);
+
+        if (age >= 21 && salary >= 30000 && (activeLoan == 'N' || activeLoan == 'n')) {
+            System.out.println("Eligible for Home Loan");
+        } else {
+            System.out.println("Not Eligible for Home Loan");
+        }
+    }
+}
